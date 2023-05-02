@@ -53,6 +53,6 @@ module "example_azure_resource" {
   virtual_machine_iso_sku        = var.virtual_machine_iso_sku
   virtual_machine_iso_version    = var.virtual_machine_iso_version
 
-  virtual_machine_iso_sku        = var.virtual_machine_iso_sku
-  virtual_machine_iso_version    = var.virtual_machine_iso_version
+  virtual_machine_admin_username = var.virtual_machine_admin_username
+  virtual_machine_admin_password = var.virtual_machine_admin_password
 }
