@@ -37,7 +37,7 @@ provider "azurerm" {
 
 module "example_azure_resource" {
   source  = "aderholdtb.scalr.io/env-uhb2h41em50np2o/test/azurerm"
-  version = "1.0.1"
+  version = "1.0.2"
 
   resource_group_name            = var.resource_group_name
   resource_group_location        = var.resource_group_location
@@ -50,6 +50,9 @@ module "example_azure_resource" {
   virtual_machine_size           = var.virtual_machine_size
   virtual_machine_iso_publisher  = var.virtual_machine_iso_publisher
   virtual_machine_iso_offer      = var.virtual_machine_iso_offer
+  virtual_machine_iso_sku        = var.virtual_machine_iso_sku
+  virtual_machine_iso_version    = var.virtual_machine_iso_version
+
   virtual_machine_iso_sku        = var.virtual_machine_iso_sku
   virtual_machine_iso_version    = var.virtual_machine_iso_version
 }
