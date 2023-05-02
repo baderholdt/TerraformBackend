@@ -13,10 +13,10 @@ terraform {
 
   backend "remote" {
     hostname = "scalr.prod-us.alarm.com"
-    organization = "env-ues7sioadjbkspg"
+    organization = "env-uhb2h41em50np2o"
 
     workspaces {
-      name = "azure-prod-sa02-coturn"
+      name = "terraform-backend-scalr"
     }
   }
 }
@@ -24,6 +24,11 @@ terraform {
 provider "azurerm" {
   features {
   }
+  
+  client_id       = var.azurerm_client_id
+  client_secret   = var.azurerm_client_secret
+  tenant_id       = var.azurerm_tenant_id
+  subscription_id = var.azurerm_subscription_id
 }
 
 ##########################################################################################
