@@ -37,7 +37,7 @@ provider "azurerm" {
 
 module "example_azure_resource" {
   source  = "aderholdtb.scalr.io/env-uhb2h41em50np2o/test/azurerm"
-  version = "1.0.3"
+  version = "1.0.4"
 
   resource_group_name            = var.resource_group_name
   resource_group_location        = var.resource_group_location
