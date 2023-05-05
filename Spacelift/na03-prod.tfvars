@@ -1,9 +1,9 @@
-resource_group_name            = "AZURE.ALARM.DEV.NA03.SPACEIO_TEST.NET.INTERNAL"
+resource_group_name            = "AZURE.ALARM.DEV.NA03.SPACELIFT_TEST.NET.INTERNAL"
 resource_group_location        = "USEAST"
 
-virtual_network_name           = "spaceio_test_network"
+virtual_network_name           = "spacelift_test_network"
 
-network_interface_name         = "spaceio_test_network_interface"
+network_interface_name         = "spacelift_test_network_interface"
 
 virtual_machine_name           = "na03ltestd02"
 virtual_machine_size           = "Standard_F2"

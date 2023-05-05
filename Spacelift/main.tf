@@ -10,15 +10,6 @@ terraform {
       version = "~> 3.53.0"
     }
   }
-
-  backend "remote" {
-    hostname = "scalr.prod-us.alarm.com"
-    organization = "env-uhb2h41em50np2o"
-
-    workspaces {
-      name = "terraform-backend-scalr"
-    }
-  }
 }
 
 provider "azurerm" {
